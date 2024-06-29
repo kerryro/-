@@ -1,0 +1,190 @@
+<html> 
+    <head>
+        <title>Victoria's Secret</title>
+        <style>
+            header {
+                background-color: #ffffff; /*цвет фона*/
+                text-align: center; /*выравнивание текста по центру*/
+                width: 100%; /*занимаем всю ширину экрана*/
+                margin: 0 auto; /*выравниваем по центру*/
+                font-family:"Times New Roman";
+                position: fixed; /*не исчезает при прокрутке*/
+                top: 0;/*убираем отступ сверху*/
+            }
+    
+            nav ul {/*код ксс, стилизирует элемент ul*/
+                list-style: none; /*убираем маркеры*/
+                margin: 0;/*убираем отступы сверху и снизу элемента*/
+                padding: 0;/*убираем внутренние отступы*/
+                display: inline-block;/*выравниваем пункты меню в строку, делаем элементы похожими на строчные*/
+            }
+    
+            nav li {
+                display: inline-block;
+                margin: 0 10px;/*отступы между пунктами*/
+                line-height: 1.5;/*межстрочный интервал*/
+            }
+    
+            nav a {
+                text-decoration: none;/*убираем подчеркивание*/
+                color: #333;/*цвет текста*/
+                font-weight: bold;/*Жирный шрифт*/
+            }
+    
+            main {/*стилизируем элемент main*/
+                background-color: #eef1fd;
+                padding-top: 70px;/*отступ сверху для заголовка*/
+                font-family:"Times New Roman";
+                line-height: 1.5;/*межстрочный интервал*/
+                font-size:20px;/*размер шрифта*/
+            }
+
+            .container {/*настройка класса container*/
+                 display: flex; /*используем flexbox для размещения элементов на странице*/
+            }                 
+  
+        .text-content {/*настройка класса text-container*/  
+            flex: 1;/*текстовый контент занимает 1 часть пространства*/  
+            padding: 20px;/*добавляем отступы для текста*/  
+        }  
+  
+        .only-text {/*настройка класса text-container*/  
+            padding: 10px;/*добавляем отступы для текста*/  
+        }  
+  
+        .image-content {/*настройка класса image-container*/  
+            flex: 1;/*изображение занимает 1 часть пространства*/  
+            padding: 20px;  
+            text-align: center;/*выравнивание изображения по центру*/  
+            position: relative;/*ключевое слово для наложения изображений друг на друга*/ 
+        }  
+  
+        .image-content img {/*настройка картинки*/  
+            max-width: 100%;/*изображение будет масштабироваться по ширине*/ 
+            position: absolute;/*делает изображение абсолютно позиционированным внутри контекста позиционирования, и благодаря ему можем управлять положением изображения в пространстве*/ 
+            width:252; 
+            height:344; 
+            z-index: 1;/*устанавливает порядок наложения*/ 
+            top: 10;  
+            left: 20;  
+        }  
+  
+        .image-content img:nth-child(2) { /*используем селекторы nth-child, чтобы стилизовать изображения по их порядку в HTML*/
+            z-index: 2;/*чтобы второе изображение было сверху первого*/  
+            width:252; 
+            height:344; 
+            top: 40;  
+            left: 250;  
+        }  
+  
+        .image-content img:nth-child(3) {  
+            z-index: 3;  
+            width:239; 
+            height:294; 
+            top: 450;  
+            left: -50;  
+        }  
+ 
+        .image-content img:nth-child(4) {  
+            z-index: 4; 
+            width:239; 
+            height:294; 
+            top: 450;  
+            left: 350;  
+        }  
+ 
+        .image-content img:nth-child(5) {  
+            z-index: 5; 
+            width:282; 
+            height:374; 
+            top: 400;  
+            left: 120;  
+        }  
+ 
+        .image-content img:nth-child(6) {  
+            z-index: 6; 
+            width:184; 
+            height:270; 
+            top: 825;  
+            left: 250;  
+        }  
+ 
+        .image-content img:nth-child(7) {  
+            z-index: 7;  
+            width:184; 
+            height:270; 
+            top: 800;  
+            left: 60;  
+        }  
+  
+    </style>   
+</head>  
+  
+<body>  
+    <header>
+        <img src="Логитип.jpg" width=180 height=58 >
+        <nav> <!--тег блока новигации-->
+            <ul> <!--неупорядоченный список-->
+                <li><a href="AboutUs.html">О нас</a></li>
+                <li><a href="ServicesPrices.html" style="color: #111e85;">Услуги и цены</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+                <li><a href="Registration.html">Онлайн запись</a></li>
+            </ul>
+        </nav>
+    </header> 
+  
+    <main>  
+            <div class="only-text">  
+            <h1>Услуги и цены</h1>  
+            В нашем салоне вас ждет широкий выбор услуг, которые помогут вам подчеркнуть вашу природную красоту и создать неповторимый образ.  
+            <br>Мы используем только высококачественную косметику и материалы, а наши опытные мастера владеют современными техниками, чтобы гарантировать превосходный результат.  
+            <p>Узнайте больше о наших услугах и ценах, и позвольте нам помочь вам почувствовать себя уверенно и прекрасно!</p>  
+        </div>  
+        <div class="container"><!--создает элемент div с классом container-->
+            <div class="text-content"> 
+                    <h3 style="color: #111e85;">Парикмахерские услуги</h3> 
+                    <ul> 
+                    <li>Стрижка <span style="font-size: 12px;">от 500 до 2500р</span></li> 
+                    <li>Окрашивание <span style="font-size: 12px;">от 3000 до 25000р</span></li> 
+                    <li>Сложное окрашивание <span style="font-size: 12px;">от 5000 до 50000р</span></li> 
+                    <li>Кератиновое выпрямление <span style="font-size: 12px;">от 5000 до 10500р</span></li> 
+                    <li>Ботокс волос <span style="font-size: 12px;">от 5500 до 11000р</span></li> 
+                    <li>Укладка <span style="font-size: 12px;">от 500 до 6000р</span></li> 
+                    </ul> 
+                    <br><br><br> 
+ 
+                    <h3 style="color: #111e85;">Ногтевой сервис</h3> 
+                    <ul> 
+                        <li>Аппаратный маникюр <span style="font-size: 12px;">600р</span></li> 
+                        <li>Обрезной маникюр <span style="font-size: 12px;">700р</span></li> 
+                        <li>Педикюр <span style="font-size: 12px;">1200р</span></li> 
+                        <li>Покрытие <span style="font-size: 12px;">от 500 до 1500р</span></li> 
+                        <li>Укрепление <span style="font-size: 12px;">от 550 до 1100р</span></li> 
+                        <li>Наращивание <span style="font-size: 12px;">от 1000 до 3000р</span></li>     
+                        <li>Дизайн любой сложности <span style="font-size: 12px;">от 500 до 2000р</span></li> 
+                    </ul> 
+                    <br><br><br> 
+     
+                    <h3 style="color: #111e85;">Ресницы / Брови</h3> 
+                    <ul> 
+                        <li>Окрашивание ресниц/бровей <span style="font-size: 12px;">1200/1400р</span></li> 
+                        <li>Ламинирование ресниц/бровей <span style="font-size: 12px;">900/1300р</span></li> 
+                        <li>Ботокс ресниц/бровей <span style="font-size: 12px;">1200/1700р</span></li> 
+                    </ul> 
+                    <br><br><br> 
+            </div> 
+ 
+        <div class="image-content"> 
+            <img src="Волосы 1.jpg" alt="Изображение 1"> 
+            <img src="Волосы 2.jpg" alt="Изображение 2"> 
+            <img src="Ногти.jpg" alt="Изображение 3"> 
+            <img src="Ноготь.jpg" alt="Изображение 4"> 
+            <img src="Мастер.jpg" alt="Изображение 5"> 
+            <img src="Ресницы.jpg" alt="Изображение 6"> 
+            <img src="Брови.jpg" alt="Изображение 7"> 
+        </div>  
+    </div>
+</main>  
+  
+</body>  
+</html>
