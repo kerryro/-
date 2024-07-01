@@ -1,36 +1,8 @@
 <html> 
     <head>
         <title>Victoria's Secret</title>
+        <link rel="stylesheet" href="style.css">
         <style>
-            header {
-                background-color: #ffffff; /*цвет фона*/
-                text-align: center; /*выравнивание текста по центру*/
-                width: 100%; /*занимаем всю ширину экрана*/
-                margin: 0 auto; /*выравниваем по центру*/
-                font-family:"Times New Roman";
-                position: fixed; /*не исчезает при прокрутке*/
-                top: 0;/*убираем отступ сверху*/
-            }
-    
-            nav ul {/*код ксс, стилизирует элемент ul*/
-                list-style: none; /*убираем маркеры*/
-                margin: 0;/*убираем отступы сверху и снизу элемента*/
-                padding: 0;/*убираем внутренние отступы*/
-                display: inline-block;/*выравниваем пункты меню в строку, делаем элементы похожими на строчные*/
-            }
-    
-            nav li {
-                display: inline-block;
-                margin: 0 10px;/*отступы между пунктами*/
-                line-height: 1.5;/*межстрочный интервал*/
-            }
-    
-            nav a {
-                text-decoration: none;/*убираем подчеркивание*/
-                color: #333;/*цвет текста*/
-                font-weight: bold;/*Жирный шрифт*/
-            }
-    
             main {/*стилизируем элемент main*/
                 background-color: #eef1fd;
                 padding-top: 70px;/*отступ сверху для заголовка*/
@@ -55,41 +27,39 @@
         </style>
     </head>
 
-<body>
-    <header>
-        <img src="Логитип.jpg" width=180 height=58 >
-        <nav> <!--тег блока новигации-->
-            <ul> <!--неупорядоченный список-->
-                <li><a href="AboutUs.html">О нас</a></li>
-                <li><a href="ServicesPrices.html">Услуги и цены</a></li>
-                <li><a href="Contacts.html" style="color: #111e85;">Контакты</a></li>
-                <li><a href="Registration.html">Онлайн запись</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body> 
+        <header>
+            <img src="Логитип.jpg" width=180 height=58 >
+            <nav> <!--тег блока новигации-->
+                <ul> <!--неупорядоченный список-->
+                    <li><a href="AboutUs.html">О нас</a></li>
+                    <li><a href="ServicesPrices.html">Услуги и цены</a></li>
+                    <li><a href="Contacts.html" style="color: #111e85;">Контакты</a></li>
+                    <li><a href="Registration.html">Онлайн запись</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<main>
-    <div class="container"><!--создает элемент div с классом container-->
-        <div class="contact-info">
-            <h1>Контакты</h1>
-            <h3>Адрес:</h3>
-            <p>Курск, ул. Радищева, 33 </p>
-            <h3>Телефон:</h3>
-            <p>+7 (905) 234-23-45​</p>
-            <h3>Почта:</h3>
-            <p>vicsicret@gmail.com</p>
-            <h3>Часы работы:</h3>
-            <p>Пн-Сб - 10:00-21:00</p>
-        </div>
+        <main>
+            <div class="container"><!--создает элемент div с классом container-->
+                <div class="contact-info">
+                    <h1>Контакты</h1>
+                    <h3>Адрес:</h3>
+                    <p>Курск, ул. Радищева, 33 </p>
+                    <h3>Телефон:</h3>
+                    <p>+7 (905) 234-23-45​</p>
+                    <h3>Почта:</h3>
+                    <p>vicsicret@gmail.com</p>
+                    <h3>Часы работы:</h3>
+                    <p>Пн-Сб - 10:00-21:00</p>
+                </div>
     
-        <div class="map">
-            <!--тег вставляет на страницу фрейм, который позволяет встроить контент с другой веб-страницы, атрибут src указывает на URL-адрес встраиваемой карты-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2367.402126743316!2d36.18229808163081!3d51.73595801108756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sул.%20Радищева%2C%2033%2C%20Курск%2C%20Курская%20обл.%2C%20Россия!5e0!3m2!1sru!2sru!4v1695246895136!5m2!1sru!2sru" width="1000" height="600"></iframe>
-        </div>
-      </div>
+                <div class="map">
+                    <!--тег вставляет на страницу фрейм, который позволяет встроить контент с другой веб-страницы, атрибут src указывает на URL-адрес встраиваемой карты-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2367.402126743316!2d36.18229808163081!3d51.73595801108756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sул.%20Радищева%2C%2033%2C%20Курск%2C%20Курская%20обл.%2C%20Россия!5e0!3m2!1sru!2sru!4v1695246895136!5m2!1sru!2sru" width="1000" height="600"></iframe>
+                </div>
+            </div>
     
-</main>
-
-</script>
-</body>
+        </main>
+    </body>
 </html>

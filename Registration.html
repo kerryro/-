@@ -1,36 +1,8 @@
 <html> 
     <head>
         <title>Victoria's Secret</title>
+        <link rel="stylesheet" href="style.css">
         <style>
-            header {
-                background-color: #ffffff; /*цвет фона*/
-                text-align: center; /*выравнивание текста по центру*/
-                width: 100%; /*занимаем всю ширину экрана*/
-                margin: 0 auto; /*выравниваем по центру*/
-                font-family:"Times New Roman";
-                position: fixed; /*не исчезает при прокрутке*/
-                top: 0;/*убираем отступ сверху*/
-            }
-    
-            nav ul {/*код ксс, стилизирует элемент ul*/
-                list-style: none; /*убираем маркеры*/
-                margin: 0;/*убираем отступы сверху и снизу элемента*/
-                padding: 0;/*убираем внутренние отступы*/
-                display: inline-block;/*выравниваем пункты меню в строку, делаем элементы похожими на строчные*/
-            }
-    
-            nav li {
-                display: inline-block;
-                margin: 0 10px;/*отступы между пунктами*/
-                line-height: 1.5;/*межстрочный интервал*/
-            }
-    
-            nav a {
-                text-decoration: none;/*убираем подчеркивание*/
-                color: #333;/*цвет текста*/
-                font-weight: bold;/*Жирный шрифт*/
-            }
-    
             main {/*стилизируем элемент main*/
                 background-color: #eef1fd;
                 padding-top: 70px;/*отступ сверху для заголовка*/
@@ -49,68 +21,65 @@
                 margin: auto; /*отступы сверху и снизу, автоматическое центрирование по горизонтали*/ 
             }                 
  
-</style> 
-</head> 
+        </style> 
+    </head> 
  
-<body> 
-    <header>
-        <img src="Логитип.jpg" width=180 height=58 >
-        <nav> <!--тег блока новигации-->
-            <ul> <!--неупорядоченный список-->
-                <li><a href="AboutUs.html">О нас</a></li>
-                <li><a href="ServicesPrices.html">Услуги и цены</a></li>
-                <li><a href="Contacts.html">Контакты</a></li>
-                <li><a href="Registration.html" style="color: #111e85;">Онлайн запись</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body> 
+        <header>
+            <img src="Логитип.jpg" width=180 height=58 >
+            <nav> <!--тег блока новигации-->
+                <ul> <!--неупорядоченный список-->
+                    <li><a href="AboutUs.html">О нас</a></li>
+                    <li><a href="ServicesPrices.html">Услуги и цены</a></li>
+                    <li><a href="Contacts.html">Контакты</a></li>
+                    <li><a href="Registration.html" style="color: #111e85;">Онлайн запись</a></li>
+                </ul>
+            </nav>
+        </header>
  
-<main> 
-    <h1>Онлайн запись</h1> 
-    <div class="form-container"> 
-    <h3>Ваши данные:</h3>  
-    <form action=”url ссылка” method=post enctype=multipart/form-data>  
-    <!--form-тег, который определяет форму. action-атрибут указывает URL-адрес серверного скрипта, который будет обрабатывать данные формы-->
-    <!--enctype=multipart/form-data - определяет тип кодирования, который позволяет отправлять данные формы-->
-        <h4 style="color: #111e85;">Ваше имя:</h4>  
-        <input type=text name="name" size=40><!--input-это тег, который определяет элемент ввода в HTML-форме-->  
-        <h4 style="color: #111e85;">Номер телефона:</h4>  
-        <input type=text name="phone" value="+7" size=40>  
-        <h4 style="color: #111e85;">Сообщение:</h4>  
-        <textarea name="comments" rows=8 cols=38> </textarea>  
-        <h3>Выберите услугу:</h3> 
-        <h4 style="color: #111e85;">Парикхмахерские услуги:</h4> 
-        <input type=checkbox name="check1" value=1>Стрижка<br> 
-        <input type=checkbox name="check2" value=2>Окрашивание<br> 
-        <input type=checkbox name="check3" value=3>Кератиновое выплямление<br> 
-        <input type=checkbox name="check4" value=4>Ботокс волос<br> 
-        <input type=checkbox name="check5" value=5>Укладка<br> 
+        <main> 
+            <h1>Онлайн запись</h1> 
+            <div class="form-container"> 
+                <h3>Ваши данные:</h3>  
+                <form action=”urlссылка” method=post enctype=multipart/form-data>  
+                    <!--form-тег, который определяет форму. action-атрибут указывает URL-адрес серверного скрипта, который будет обрабатывать данные формы-->
+                    <!--enctype=multipart/form-data - определяет тип кодирования, который позволяет отправлять данные формы-->
+                    <h4 style="color: #111e85;">Ваше имя:</h4>  
+                    <input type=text name="name" size=40><!--input-это тег, который определяет элемент ввода в HTML-форме-->  
+                    <h4 style="color: #111e85;">Номер телефона:</h4>  
+                    <input type=text name="phone" value="+7" size=40>  
+                    <h4 style="color: #111e85;">Сообщение:</h4>  
+                    <textarea name="comments" rows=8 cols=38> </textarea>  
+                    <h3>Выберите услугу:</h3> 
+
+                    <h4 style="color: #111e85;">Парикхмахерские услуги:</h4> 
+                    <input type=checkbox name="check1" value=1>Стрижка<br> 
+                    <input type=checkbox name="check2" value=2>Окрашивание<br> 
+                    <input type=checkbox name="check3" value=3>Кератиновое выплямление<br> 
+                    <input type=checkbox name="check4" value=4>Ботокс волос<br> 
+                    <input type=checkbox name="check5" value=5>Укладка<br> 
  
-        <h4 style="color: #111e85;">Ногтевой сервис:</h4> 
-        <input type=checkbox name="check6" value=6>Аппаратный маникюр<br> 
-        <input type=checkbox name="check7" value=7>Обрезной маникюр<br> 
-        <input type=checkbox name="check8" value=8>Педикюр<br> 
-        <input type=checkbox name="check9" value=9>Покрытие<br> 
-        <input type=checkbox name="check10" value=10>Укрепление<br> 
-        <input type=checkbox name="check11" value=11>Наращивание<br>  
-        <input type=checkbox name="check12" value=12>Дизайн любой сложности<br> 
+                    <h4 style="color: #111e85;">Ногтевой сервис:</h4> 
+                    <input type=checkbox name="check6" value=6>Аппаратный маникюр<br> 
+                    <input type=checkbox name="check7" value=7>Обрезной маникюр<br> 
+                    <input type=checkbox name="check8" value=8>Педикюр<br> 
+                    <input type=checkbox name="check9" value=9>Покрытие<br> 
+                    <input type=checkbox name="check10" value=10>Укрепление<br> 
+                    <input type=checkbox name="check11" value=11>Наращивание<br>  
+                    <input type=checkbox name="check12" value=12>Дизайн любой сложности<br> 
  
-        <h4 style="color: #111e85;">Ресницы/Брови:</h4> 
-        <input type=checkbox name="check13" value=13>Ламинирование ресниц<br> 
-        <input type=checkbox name="check14" value=14>Ламинирование бровей<br> 
-        <input type=checkbox name="check15" value=15>Окрашивание ресниц<br> 
-        <input type=checkbox name="check16" value=16>Окрашивание бровей<br> 
-        <input type=checkbox name="check17" value=17>Ботокс ресниц<br> 
-        <input type=checkbox name="check18" value=18>Ботокс бровей<br>  
+                    <h4 style="color: #111e85;">Ресницы/Брови:</h4> 
+                    <input type=checkbox name="check13" value=13>Ламинирование ресниц<br> 
+                    <input type=checkbox name="check14" value=14>Ламинирование бровей<br> 
+                    <input type=checkbox name="check15" value=15>Окрашивание ресниц<br> 
+                    <input type=checkbox name="check16" value=16>Окрашивание бровей<br> 
+                    <input type=checkbox name="check17" value=17>Ботокс ресниц<br> 
+                    <input type=checkbox name="check18" value=18>Ботокс бровей<br>  
  
-        <br><input type="submit" name="ok" style="color: #111e85;">  
-        <p style="font-size: 9pt;">Наш администратор свяжется с вами в течении часа для уточнения подробностей и оглашения  конечной стоимости услуг.</p> 
- 
-        </div> 
-    </form>    
- 
-</main> 
- 
-</script> 
-</body> 
+                    <br><input type="submit" name="ok" style="color: #111e85;">  
+                    <p style="font-size: 9pt;">Наш администратор свяжется с вами в течении часа для уточнения подробностей и оглашения  конечной стоимости услуг.</p> 
+                </form> 
+            </div> 
+        </main> 
+    </body> 
 </html>
