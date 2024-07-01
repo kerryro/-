@@ -1,0 +1,29 @@
+header {
+    background-color: #ffffff; /*цвет фона*/
+    text-align: center; /*выравнивание текста по центру*/
+    width: 100%; /*занимаем всю ширину экрана*/
+    margin: 0 auto; /*выравниваем по центру*/
+    font-family:"Times New Roman";
+    position: fixed; /*не исчезает при прокрутке*/
+    top: 0;/*убираем отступ сверху*/
+    z-index: 8;
+}
+
+nav ul {/*код ксс, стилизирует элемент ul*/
+    list-style: none; /*убираем маркеры*/
+    margin: 0;/*убираем отступы сверху и снизу элемента*/
+    padding: 0;/*убираем внутренние отступы*/
+    display: inline-block;/*выравниваем пункты меню в строку, делаем элементы похожими на строчные*/
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;/*отступы между пунктами*/
+    line-height: 1.5;/*межстрочный интервал*/
+}
+
+nav a {
+    text-decoration: none;/*убираем подчеркивание*/
+    color: #333;/*цвет текста*/
+    font-weight: bold;/*Жирный шрифт*/
+}
